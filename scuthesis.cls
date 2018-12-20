@@ -71,7 +71,6 @@
   plainpages=false,
   pdfpagelabels,
   pdfborder=0 0 0}
-\RequirePackage{hypernat}
 
 \RequirePackage{geometry}
 \geometry{%
@@ -304,8 +303,8 @@
   \end{center}\par\vskip1.1cm
   {\addtolength\leftskip{1.7cm}
   \addtolength\rightskip{.9cm}
-  {\bf\kaishu\zihao{5}{\fontspec{KaiTi} [}摘要{\fontspec{KaiTi} ]}}\hskip.2cm{\kaishu\zihao{5}\scu@cabstract}\vskip1.3cm
-  {\bf\kaishu\zihao{5}{\fontspec{KaiTi} [}关键词{\fontspec{KaiTi} ]}}\hskip.2cm{\kaishu\zihao{5}\scu@cabstract@key}
+  {\bf\kaishu\zihao{5}[摘要]}\hskip.2cm{\kaishu\zihao{5}\scu@cabstract}\vskip1.3cm
+  {\bf\kaishu\zihao{5}[关键词]}\hskip.2cm{\kaishu\zihao{5}\scu@cabstract@key}
   \clearpage}
   % English Abstract
   \thispagestyle{abstract}
@@ -323,7 +322,8 @@
   \clearpage
   \chapter*{\hspace*{\fill}\scu@announcement@title\hspace*{\fill}}
   \addcontentsline{toc}{chapter}{\scu@announcement@title}
-  \scu@announcement@text\\[3cm]
+  \scu@announcement@text
+  \vspace{3cm}
 
   \begin{flushright}
     \begin{tabular}{cc}
